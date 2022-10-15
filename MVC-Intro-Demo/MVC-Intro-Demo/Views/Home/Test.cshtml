@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Test";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<ul>
+    @for (int i = 1; i <= ViewBag.Count; i++)
+    {
+        <li>@i</li>
+    }
+</ul>
+
+<form action="/Home">
+    <input type="submit" value="Go to homepage" />
+</form>
+
+<form method="post">
+    <label for="text">Add your new data here</label>
+    <input name="count" value="@ViewBag.Count" />
+    <button type="submit">Submit</button>
+</form>
