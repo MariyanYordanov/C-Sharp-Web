@@ -13,7 +13,7 @@ namespace ChatApp.Controllers
         [HttpGet]
         public IActionResult Show()
         {
-            if (messages.Count < 0)
+            if (messages.Count() < 1)
             {
                 return View(new ChatViewModel());
             }
