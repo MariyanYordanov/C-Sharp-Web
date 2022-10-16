@@ -13,7 +13,11 @@ namespace ChatApp.Controllers
         [HttpGet]
         public IActionResult Show()
         {
+<<<<<<< HEAD
             if (messages.Count < 1)
+=======
+            if (messages.Count() < 1)
+>>>>>>> d00ec907c42233f848da40673a836768061d8226
             {
                 return View(new ChatViewModel());
             }
